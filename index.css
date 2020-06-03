@@ -1,0 +1,143 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Lora', serif;
+    background-color: rgb(228, 231, 231, 0.2);
+}
+
+h1 {
+  text-decoration: underline;
+  font-family: 'Lora', serif;
+  font-size: 10px;
+}
+
+
+.random-pane {
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-item {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding: 5px;
+  margin: 5px;
+  width: 220px;
+  height: 165px;
+  display: inline-block;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.item .title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    height: 40px;
+    overflow: hidden;
+}
+
+
+.big-item {
+  position: absolute;
+  display: flex !important;
+  
+  width: auto;
+  height: 90vh;
+
+  top: 22px !important;
+  left: 33% !important;
+  right: 5% !important;
+
+  opacity: 1 !important;
+  z-index: 99;
+
+  font-family: 'Lora', serif;
+  font-size: 30px;
+
+  overflow-x: auto;
+
+  /*column-count: 3;*/
+}
+
+.big-item img {
+  width: 48%;
+}
+
+.big-item > div {
+  flex: 1;
+}
+
+.big-item > div:first-of-type {
+  flex-grow: 2;
+}
+
+
+.menu-item {
+  padding: 5px;
+  background-color: grey;
+  float: left;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/*.titel {
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 10px;
+  top: 0%;
+  left: 0%;
+  z-index: 00;
+  text-decoration: underline;
+}*/
+
+
+/* STYLING FILTER BUTTONS */
+.button-group {
+  position: fixed !important;
+  top: 3%;
+  left: 2%;
+  z-index: 10;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 10px;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+}
+
+
+button:focus {outline:0;}
+
+.button-group button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px 20px;
+}
+
+.hover-button {
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  margin: 12px;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
